@@ -13,10 +13,21 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name'); // Nom complet (utilisé par Breeze)
+            $table->string('username')->unique(); // Demandé dans tes specs
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+
+            // --- AJOUTS POUR TON APPLICATION ---
+            $table->string('firstname')->nullable(); // Prénom
+            $table->string('lastname')->nullable();  // Nom
+            $table->string('phone')->nullable();
+            $table->enum('civility', ['Homme', 'Femme'])->nullable();
+            $table->string('organisation')->nullable(); // Pour le détail utilisateur
+            $table->boolean('is_active')->default(true); // Statut actif/inactif
+            $table->timestamp('last_login_at')->nullable(); // Pour la traçabilité
+            // ------------------------------------
             $table->rememberToken();
             $table->timestamps();
         });
