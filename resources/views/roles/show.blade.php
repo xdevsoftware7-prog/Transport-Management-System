@@ -757,7 +757,7 @@
                         <i class="fa-solid fa-list"></i>
                         Tous les rôles
                     </a>
-                    <a href="{{ route('roles.edit', $role) }}" class="btn-edit-role">
+                    <a href="{{ route('permissions.index', $role) }}" class="btn-edit-role">
                         <i class="fa-solid fa-pen-to-square"></i>
                         Gérer les permissions
                     </a>

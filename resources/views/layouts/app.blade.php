@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     @stack('styles')
-    {{-- laravel notify css --}}
-    @notifyCss
 </head>
 
 <body>
@@ -47,13 +45,13 @@
 
     </div>
 
-    {{-- appel de laravel notify --}}
-    <x-notify::notify />
+
     {{-- App JS --}}
     <script src="{{ asset('js/app.js') }}"></script>
+    {{-- 2. ENSUITE la bibliothèque SweetAlert2 (via CDN ou le package) --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @include('sweetalert::alert')
     @stack('scripts')
-    {{-- laravel notify js --}}
-    @notifyJs
 </body>
 
 </html>
