@@ -137,7 +137,7 @@
 
                 {{-- Rôles --}}
                 <li class="nav-item {{ request()->routeIs('roles.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('roles.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-shield-halved"></i></span>
                         <span class="nav-label">Rôles</span>
                     </a>
