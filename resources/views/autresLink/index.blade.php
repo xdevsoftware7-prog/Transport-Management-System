@@ -24,6 +24,13 @@
             <div class="stat-mini"><a href="{{ route('location_societes.index') }}"><span>Location_Societes</span></a></div>
             <div class="stat-mini"><a href="{{ route('semi_remorques.index') }}"><span>Semi_Remorque</span></a></div>
         </div>
+
+        <div class="maintenance-grid mt-3">
+            <div class="stat-mini"><a href="{{ route('trajets.index') }}"><span>Trajets</span></a></div>
+            <div class="stat-mini"><a href="{{ route('absences.index') }}"><span>Absences</span></a></div>
+            <div class="stat-mini"><a href="{{ route('tarif_clients.index') }}"><span>Tarif Client</span></a></div>
+            {{-- <div class="stat-mini"><a href="{{ route('semi_remorques.index') }}"><span>Semi_Remorque</span></a></div> --}}
+        </div>
     </div>
 
 @endsection
