@@ -67,7 +67,7 @@
 
                 {{-- Chauffeurs --}}
                 <li class="nav-item {{ request()->routeIs('chauffeurs.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('chauffeurs.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-id-card"></i></span>
                         <span class="nav-label">Chauffeurs</span>
                     </a>
