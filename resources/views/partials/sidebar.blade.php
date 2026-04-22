@@ -59,7 +59,7 @@
             <ul class="nav-list">
                 {{-- Véhicules --}}
                 <li class="nav-item {{ request()->routeIs('vehicules.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('vehicules.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-truck"></i></span>
                         <span class="nav-label">Véhicules</span>
                     </a>
