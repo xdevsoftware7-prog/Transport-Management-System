@@ -8,7 +8,7 @@
 |   3. Si c'est un nouveau groupe, copier un bloc <div class="nav-group">
 |
 | Icônes disponibles : https://fontawesome.com/icons
-|--}}
+| --}}
 
 <aside class="sidebar" id="sidebar">
 
@@ -129,7 +129,7 @@
             <ul class="nav-list">
                 {{-- Utilisateurs --}}
                 <li class="nav-item {{ request()->routeIs('utilisateurs.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('users.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-user-gear"></i></span>
                         <span class="nav-label">Utilisateurs</span>
                     </a>
@@ -140,6 +140,14 @@
                     <a href="{{ route('roles.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-shield-halved"></i></span>
                         <span class="nav-label">Rôles</span>
+                    </a>
+                </li>
+
+                {{-- AutresLink: des liens pour gerer les tables indepedantsm utilitaires pour les autres tables --}}
+                <li class="nav-item {{ request()->routeIs('autresLink') ? 'active' : '' }}">
+                    <a href="{{ route('autresLink') }}" class="nav-link">
+                        <span class="nav-icon"><i class="fa-solid fa-circle-dollar-to-slot"></i></span>
+                        <span class="nav-label">Autres Liens</span>
                     </a>
                 </li>
             </ul>
