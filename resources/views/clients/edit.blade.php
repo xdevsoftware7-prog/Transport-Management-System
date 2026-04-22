@@ -882,7 +882,7 @@
                         <i class="fa-solid fa-xmark"></i>
                         Annuler
                     </a>
-                    <button type="submit" class="btn-danger"
+                    <button type="button" class="btn-danger"
                         onclick="handleDeleteClient({{ $client->id }}, '{{ addslashes($client->prenom . ' ' . $client->nom) }}')">
                         <i class="fa-solid fa-trash"></i>
                         Supprimer ce client
