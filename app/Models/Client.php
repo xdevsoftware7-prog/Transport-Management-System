@@ -23,4 +23,12 @@ class Client extends Model
         'modalite_paiement',
         'is_active'
     ];
+
+    protected $casts = [
+        'is_active' => 'boolean',
+    ];
+    public function tarifClients()
+    {
+        return $this->hasMany(TarifClient::class);
+    }
 }
