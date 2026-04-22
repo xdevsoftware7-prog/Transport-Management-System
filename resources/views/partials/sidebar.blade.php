@@ -90,7 +90,7 @@
             <ul class="nav-list">
                 {{-- Clients --}}
                 <li class="nav-item {{ request()->routeIs('clients.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('clients.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-users"></i></span>
                         <span class="nav-label">Clients</span>
                     </a>
