@@ -21,8 +21,8 @@
         <div class="maintenance-grid">
             <div class="stat-mini"><a href="{{ route('villes.index') }}"><span>Villes</span></a></div>
             <div class="stat-mini"><a href="{{ route('articles.index') }}"><span>Articles</span></a></div>
-            <div class="stat-mini"><a href="{{ route('chauffeurs.index') }}"><span>Chauffeurs</span></a></div>
-            <div class="stat-mini"><a href="#"><span>Clients</span></a></div>
+            <div class="stat-mini"><a href="{{ route('chauffeurs.index') }}"><span>Location_Societes</span></a></div>
+            <div class="stat-mini"><a href="{{ route('clients.index') }}"><span>Clients</span></a></div>
         </div>
     </div>
 
