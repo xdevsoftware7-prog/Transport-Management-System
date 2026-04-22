@@ -34,4 +34,14 @@ class Chauffeur extends Model
     {
         return $this->hasMany(ChauffeurPermis::class);
     }
+    public function vehicules()
+    {
+        return $this->hasMany(Vehicule::class);
+    }
+
+    // Raccourci : le véhicule actuellement assigné (le premier)
+    public function vehicule()
+    {
+        return $this->hasOne(Vehicule::class);
+    }
 }
