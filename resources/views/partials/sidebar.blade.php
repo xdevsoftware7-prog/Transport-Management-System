@@ -75,7 +75,7 @@
 
                 {{-- Gestion des Voyages --}}
                 <li class="nav-item {{ request()->routeIs('voyages.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('trajets.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-route"></i></span>
                         <span class="nav-label">Gestion des Voyages</span>
                     </a>
