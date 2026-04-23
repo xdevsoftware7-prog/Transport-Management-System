@@ -44,7 +44,7 @@
 
                 {{-- Commandes --}}
                 <li class="nav-item {{ request()->routeIs('commandes.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('commandes.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-plus"></i></span>
                         <span class="nav-label">Commandes</span>
                     </a>
