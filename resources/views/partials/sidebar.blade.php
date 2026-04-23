@@ -114,7 +114,7 @@
 
                 {{-- Primes de Déplacement --}}
                 <li class="nav-item {{ request()->routeIs('primes.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('prime_deplacements.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-circle-dollar-to-slot"></i></span>
                         <span class="nav-label">Primes de Déplacement</span>
                     </a>
