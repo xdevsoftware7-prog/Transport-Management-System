@@ -98,7 +98,7 @@
 
                 {{-- Factures --}}
                 <li class="nav-item {{ request()->routeIs('factures.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('factures.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-chart-bar"></i></span>
                         <span class="nav-label">Factures</span>
                     </a>
