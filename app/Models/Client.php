@@ -31,4 +31,8 @@ class Client extends Model
     {
         return $this->hasMany(TarifClient::class);
     }
+    public function commandes()
+    {
+        return $this->hasMany(Commande::class);
+    }
 }

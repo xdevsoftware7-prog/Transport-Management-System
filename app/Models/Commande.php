@@ -55,6 +55,12 @@ class Commande extends Model
         return $this->belongsTo(Trajet::class);
     }
 
+ 
+    public function lignesCommandes()
+    {
+        return $this->hasMany(LigneCommande::class);
+    }
+
     // ════════════════════════════════════════════════════════════════════════
     // SCOPES
     // ════════════════════════════════════════════════════════════════════════
