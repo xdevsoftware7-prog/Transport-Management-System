@@ -44,4 +44,9 @@ class Chauffeur extends Model
     {
         return $this->hasOne(Vehicule::class);
     }
+
+    public function bonLivraisons()
+    {
+        return $this->hasMany(BonLivraison::class);
+    }
 }

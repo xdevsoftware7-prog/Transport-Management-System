@@ -55,10 +55,14 @@ class Commande extends Model
         return $this->belongsTo(Trajet::class);
     }
 
- 
+
     public function lignesCommandes()
     {
         return $this->hasMany(LigneCommande::class);
+    }
+    public function bonLivraisons()
+    {
+        return $this->hasMany(BonLivraison::class);
     }
 
     // ════════════════════════════════════════════════════════════════════════

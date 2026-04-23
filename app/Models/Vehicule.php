@@ -43,4 +43,9 @@ class Vehicule extends Model
     {
         return $this->belongsTo(Chauffeur::class);
     }
+
+    public function bonLivraisons()
+    {
+        return $this->hasMany(BonLivraison::class);
+    }
 }
