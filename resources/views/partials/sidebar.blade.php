@@ -106,7 +106,7 @@
 
                 {{-- Bons de Livraison --}}
                 <li class="nav-item {{ request()->routeIs('bons-livraison.*') ? 'active' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('bon_livraisons.index') }}" class="nav-link">
                         <span class="nav-icon"><i class="fa-solid fa-file-invoice"></i></span>
                         <span class="nav-label">Bons de Livraison</span>
                     </a>
