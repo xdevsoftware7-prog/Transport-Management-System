@@ -30,7 +30,10 @@ class Trajet extends Model
     {
         return $this->hasMany(TarifClient::class);
     }
-
+    public function primeDeplacements()
+    {
+        return $this->hasMany(PrimeDeplacement::class);
+    }
     // Accessor pratique pour afficher le libellé du trajet
     public function getLabelAttribute(): string
     {
