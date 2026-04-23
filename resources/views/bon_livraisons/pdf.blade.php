@@ -33,6 +33,8 @@
         .page {
             width: 80%;
             padding: 28px 32px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /* ── HEADER ── */
