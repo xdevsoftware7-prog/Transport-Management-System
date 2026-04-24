@@ -48,4 +48,9 @@ class Vehicule extends Model
     {
         return $this->hasMany(BonLivraison::class);
     }
+
+    public function infractions()
+    {
+        return $this->hasMany(Infraction::class);
+    }
 }
