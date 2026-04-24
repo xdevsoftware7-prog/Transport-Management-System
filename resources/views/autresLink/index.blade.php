@@ -35,7 +35,7 @@
             <div class="stat-mini"><a href="{{ route('infractions.index') }}"><span>Infractions</span></a></div>
             <div class="stat-mini"><a href="{{ route('absences.index') }}"><span>Accidents</span></a></div>
             <div class="stat-mini"><a href="{{ route('tarif_clients.index') }}"><span>Docuemnets Vehicules</span></a></div>
-            <div class="stat-mini"><a href="{{ route('ligne_commandes.index') }}"><span>Maintenances</span></a></div>
+            <div class="stat-mini"><a href="{{ route('maintenances.index') }}"><span>Maintenances</span></a></div>
         </div>
     </div>
 
